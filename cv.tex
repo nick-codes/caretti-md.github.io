@@ -1,0 +1,277 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+
+%\usepackage[letterpaper, margin=0.75in]{geometry}
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+\newcommand{\namestyle}[1]{\underline{\bf #1 }}
+
+% Define some styles we use
+\newcommand{\titlestyle}[1]{{\bf #1}}
+\newcommand{\placestyle}[1]{\footnotesize $\cdot$\ \ {\emph{#1}}}
+\newcommand{\datestyle}[1]{{\tiny \dotfill} {\small (#1)}}
+
+\renewcommand{\labelitemi}{{\small $\bullet$}}
+\renewcommand{\labelitemii}{--}
+\renewcommand{\labelitemiii}{$\circ$}
+\renewcommand{\labelitemiv}{$\diamond$}
+
+\usepackage{graphicx}
+
+\usepackage{enumitem}
+\setitemize{itemsep=0.5pt,topsep=0pt,parsep=0pt,partopsep=0pt}
+\setenumerate{itemsep=0.5pt,topsep=0pt,parsep=0pt,partopsep=0pt}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\usepackage{microtype}
+\usepackage{times}
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node[rectangle] at (11.6, -2.5)
+   {\includegraphics[width=3cm]{cv-image}
+  };
+\end{tikzpicture}
+
+\vspace{-0.5in}
+\name{Viola Caretti M.D. Ph.D.}
+% \address used twice to have two lines of address
+\address{+1 (650) 704-5020}
+\address{vcaretti@stanford.edu}
+
+\begin{resume}
+
+\section{OBJECTIVE}
+\begin{itemize}
+\item {\small To find a cure for brain cancer in children, with focus on DIPG}
+\end{itemize}
+
+\section{HIGHLIGHTS \\ OF \\ QUALIFICATIONS}
+\begin{itemize}
+  \item {\small {\bf Postdoctoral Fellow} in Postnatal Neurodevelopment at Stanford}
+  \item {\small {\bf PhD} in Pediatric Neuro-Oncology}
+  \item {\small Licensed {\bf Doctor of Medicine} in the EU}
+  \item {\small {\bf First authorship} on 10 published manuscripts}
+  \item {\small Began a {\bf novel line of research} on DIPG}
+  \item {\small {\bf Setup \emph{in vivo} work} in the NRG}
+  \item {\small Numerous {\bf grants}, {\bf awards} and {\bf scholarships}}
+  \item {\small Extensive mentoring, international and volunteer experience}
+\end{itemize}
+
+\section{WORK \\ AUTHORIZATION}
+\begin{itemize}
+\item Permanent Resident (Green Card Holder)
+\end{itemize}
+
+\vspace{15pt}
+\section{EDUCATION}
+\begin{itemize}
+\item {
+  \titlestyle{Stanford University} \datestyle{October 2012 -- Present} \\
+  { \placestyle{Stanford, CA, USA} } \\
+  Monje Lab \\
+  {\bf Postdoctoral Fellow:} \emph{``Neuro-glial Interactions in the Glioma Microenvironment''} \\
+  Stanford Optogentics Innovation Laboratory Course \datestyle{January 2013}
+}
+\item {
+  \titlestyle{Cancer Center Amsterdam, VUmc} \datestyle{May 2008 -- July 2012} \\
+  { \placestyle{Amsterdam, The Netherlands} } \\
+  Neuro-Oncology Research Group (NRG), VU University Medical Center (VUmc) \\
+  Ph.D. Project: \emph{``Diffuse intrinsic pontine gliomas: towards new treatment strategies''}
+%  Course: {Laboratory Animal Science} \datestyle{June 2008} \\
+%  Course: {Working with Radioactivity} \datestyle{April 2009}
+}
+\item {
+  \titlestyle{Bicocca University of Medicine} \datestyle{October 2000 -- March 2007} \\
+  { \placestyle{Milan, Italy} } \\
+  Degree: Doctor of Medicine (\emph{grade: 109/110}) \\
+  Thesis: {\small ``Non-dopaminergic systems in Parkinson's Disease: an [\superscript{123}I]$\beta$-CIT SPECT Study''} \\
+  \emph{Student Council Representative to the Medicine Faculty} \datestyle{2003 -- 2004}
+}
+\item {
+  \titlestyle{Erasmus Project} \datestyle{March -- December 2006} \\
+  { \placestyle{Amsterdam, The Netherlands} } \\
+  \emph{Experimental medical thesis internship} at the VUmc (Neurology Department)
+}
+\item {
+  \titlestyle{Impington Village College} \datestyle{September 1998 -- May 2000} \\
+  { \placestyle{Cambridge, United Kingdom} } \\
+  International Baccalaureate \emph{(grade: 38/45)} \\
+  Ranked 1\superscript{st} among all foreign students and 2\superscript{nd} in the graduating class.
+}
+\item {
+  \titlestyle{Tito Livio Liceum} \datestyle{1994 -- 1998} \\
+  { \placestyle{Milan, Italy} } \\
+  Classical Studies including Greek and Latin
+}
+\end{itemize}
+
+\section{MEDICAL \\ BOARDS}
+\begin{itemize}
+\item {
+  \titlestyle {USMLE Step 2 CS} \datestyle{May 2016}
+}
+\item {
+  \titlestyle {USMLE Step 1} \datestyle{October 2016}
+}
+\item {
+  \titlestyle {Medical Licensing Exam} \datestyle{July 2007} \\
+  { \placestyle{Milan, Italy} }
+}
+\end{itemize}
+
+\section{GRANTS \\ AND \\ FELLOWSHIPS}
+\begin{itemize}
+  \item \emph{Lyla Nsouli foundation} Brain Cancer Research Grant \datestyle{2015}
+  \item \emph{Bear Necessities} Pediatric Cancer Foundation fellowship \datestyle{2014}
+  \item \emph{Child Health ResearchInstitute (CHRI)} Grant Support Award \datestyle{2013}
+  \item \emph{Deans Postdoctoral Fellowship} (Stanford University) \datestyle{2013}
+  \item \emph{American Italian Cancer Foundation (AICF)} fellowship (not accepted) \datestyle{2013}
+\end{itemize}
+
+\newpage
+\section{PUBLICATIONS}
+\vspace{-0.75pt}
+{\footnotesize 
+\begin{enumerate}
+\item M.H.A. Jansen*, T. Lagerweij*, A.C.P. Sewing*, D.J. Vugts, D.G. van Vuurden, C.F.M. Molthoff, \namestyle{V. Caretti}, S.J.E. Veringa, N. Petersen, A.M. Carcaboso, D.P. Noske, W.P. Vandertop, P. Wesseling, G.A.M.S. van Dongen, G.J.L. Kaspers, E. Hulleman. Bevacizumab targeting diffuse intrinsic pontine glioma: results of 89Zr-bevacizumab PET imaging in brain tumor models. \emph{Mol Cancer Ther} (June 2016; accepted)
+\item H.S. Venkatesh*, TB Johung*, \namestyle{V. Caretti*}, A. Noll*, Y. Tang, S. Nagaraja, E.M. Gibson, C.W. Mount, J. Polepalli, S.S.Mitra, P.J. Woo, R.C. Malenka, H. Vogel, M. Bredel, P. Mallick, M.Monje. Neuronal Activity Promotes Glioma Growth through Neuroligin-3 Secretion. \emph{Cell} (May 2015).161(4): 803–816.
+\item A.C.P.Sewing*, \namestyle{V. Caretti*}, T. Lagerweij*, P. Schellen, M.H.A. Jansen, D.G. van Vuurden, S. Idema, C.F. Molthoff, W.P.Vandertop, G.J.L. Kaspers, D.P. Noske, E. Hulleman. Convection enhanced delivery of carmustine to the murine brainstem: A feasibility study. \emph{J Neurosci Methods} (Sep 2014). PMID:25263805
+\item \namestyle{V. Caretti*}, M. Bugiani*, M Freret, P Schellen, M.H.A. Jansen, D.G. van Vuurden, G.J.L. Kaspers, PG Fisher, E Hulleman, P. Wesseling, H Vogel, M Monje. Subventricular spread of diffuse intrinsic pontine glioma. \emph{Acta Neuropathol} (Jun 2014). PMID:24929912
+\item \namestyle{V. Caretti}, C.Sewing, T. Lagerweij, P. Schellen, M. Bugiani, M.H.A. Jansen, D.G. van Vuurden, A.C. Navis, I. Horsman, P. Wesseling, W.P.Vandertop, D.P. Noske, G.J.L. Kaspers, E. Hulleman, H. Vogel, M. Monje*, T. Wurdinger*. Human pontine glioma cells can induce murine tumors. \emph{Acta Neuropathol} (Apr 2014). 127(6):897-909.
+\item E. Giovannetti, Q.Wang, A. Avan, N. Funel, E. Galvani, T. Lagerweij, D. Chiasserini, J.H. Lee, \namestyle{V. Caretti}, A. van der Velde, U. Boggi, Y. Wang, E. Vasile, G.J .Peters, T. Wurdinger, G. Giaccone.. CYB5A role in pancreatic cancer prognosis and autophagy modulation.. \emph{JNCI} (Oct. 2013) PMID: 24301457
+\item A. Avan*, \namestyle{V. Caretti*}, N. Funel*, E. Galvani, M. Maftouh, R.J. Honeywell, T. Lagerweij, O.V. Tellingen, D. Campani, D. Fuchs, H.M. Verheul, G.J .Schuurhuis, U. Boggi, G.J. Peters, T. Wrdinger, E. Giovannetti. Crizotinib inhibits metabolic inactivation of gemcitabine in c-Met-driven pancreatic carcinoma. \emph{Cancer Res} (Sept. 2013). PMID:24085787
+\item \namestyle{V. Caretti*}, L. Hiddingh*, T. Lagerweij, P. Schellen, P.W. Koken, E. Hulleman, D. van Vuurden, W.P. Vandertop, G. Kaspers, D.P. Noske, T. Wurdinger. WEE1 Kinase Inhibition Enhances the Radiation Response of Diffuse Intrinsic Pontine Gliomas. \emph{Mol Cancer Ther} (Dec. 2012)
+\item \namestyle{V. Caretti*}, L. Hiddingh*, T. Lagerweij, P. Schellen, P.W. Koken,E.Hulleman, D. van Vuurden, W.P. Vandertop, G. Kaspers, D.P. Noske, T. Wurdinger. WEE1 Kinase Inhibition Enhances the Radiation Response of Diffuse Intrinsic Pontine Gliomas. \emph{Mol Cancer Ther} (Dec. 2012). 12(2):141-50.
+\item \namestyle{V. Caretti*}, M.H.A. Jansen*, D.G. van Vuurden, T. Lagerweij, M. Bugiani, I. Horsman, H. Wessels, P. van der Valk, J. Cloos, D.P. Noske, W.P. Vandertop, P. Wesseling, T. Wurdinger, E. Hulleman, G. Kaspers. Implementation of a Multi-Institutional Diffuse Intrinsic Pontine Glioma Autopsy Protocol and Characterization of a Primary Cell Culture. \emph{Neuropathol Appl Neurobiol} (July 2012)
+\item \namestyle{V. Caretti}, D.P Noske, W.P. Vandertop, G. Kaspers, T. Wurdinger. Pioneering Preclinical Research in Diffuse Intrinsic Pontine Glioma: Towards New Treatment Strategies. \emph{PhD Thesis} (July 2012)
+\item S. Idema, \namestyle{V. Caretti}, M. Lamfers, V. van Beusechem, D. Noske, W.P. Vandertop, C. Dirven. Anatomical differences determine distribution of adenovirus after convection-enhanced delivery to the rat brain. \emph{PLoS One} (October 2011), 6(10) e24396
+\item \namestyle{V. Caretti}, I. Zondervan, D. Meijer, S. Idema, W. Vos, B. Hamans, M. Bugiani, E. Hulleman, P. Wesseling, W. Vandertop, D. Noske, P. David G. Kaspers, C. Molthoff, T. Wurdinger. Monitoring of tumor growth and post-irradiation recurrence in a diffuse intrinsic pontine glioma mouse model. \emph{Brain Pathology} (July, 2011) 21(4) 441-51
+\item \namestyle{V. Caretti}, D. Stoffers, A. Winogrodzka, I-U. Isaias, G. Costantino, G. Pezzoli, C. Ferrarese, A Antonini,. E-Ch. Wolters, J. Booij. Loss of thalamic serotonin transporters in early drug-naıve Parkinson’s disease patients is associated with tremor: an [(123)I]beta-CIT SPECT study. \emph{J Neural Transm} (May 2008) 115(5) 721-9
+  \\ \\ {* Equal Contribution}
+\end{enumerate}
+}
+
+\section{STUDENTS \\ MENTORED}
+\begin{itemize}
+\item 2 Undergraduate, 1 Medical, and 2 PhD Students (Stanford) \datestyle{2013 -- 2016}
+  \begin{itemize}
+  \item 1 Undergraduate awarded the Stanford Firestone Medal \datestyle{2016}
+  \end{itemize}
+\item 3 Masters Students (Master Oncology, VUmc)  \datestyle{2009 -- 2011}
+\end{itemize}
+
+\section{AWARDS \\ FOR \\ INTERNATIONAL \\ INTERNSHIPS}
+\begin{itemize}
+\item {\bf Hospital das Clinicas}, Neurology Department \datestyle{August -- September 2007} \\
+  { \placestyle{Belo Horizonte, Brazil} } \\
+  { \small From: \emph{International Federation of Medical Students Associations} }
+\item {\bf Hospital Universitario Central de Asturias}, Pnumology Department \datestyle{August 2004} \\
+  { \placestyle{Oviedo, Spain} } \\
+  { \small From: \emph{International Federation of Medical Students Associations} }
+\end{itemize}
+
+\newpage
+\section{HONORS}
+\begin{itemize}
+\item \emph{SLIC Facilitator} Stanford Leaders in Communication \datestyle{June 2014} \\
+  { \placestyle{ Stanford, CA } }
+\item \emph{Best Presentation Award} \datestyle{November 2010} \\
+    {OOA (Annual Oncology Graduate School) Retreat} \\
+    { \placestyle{Texel, The Netherlands} }
+\item \emph{Travel Award} \datestyle{December 2007} \\
+    {WFN World Congress on Parkinson's Disease and Related Disorders}  \\
+    { \placestyle{Amsterdam, The Netherlands} }
+\end{itemize}
+
+\section{SYMPOSIA \\ AND \\ CONGRESSES}
+\begin{itemize}
+\item {
+  Oral Presentations:
+  \begin{itemize}
+  \item { DIPG Research Related:
+    \begin{itemize}
+    \item International Symposium on Pediatric Neuro-Oncology \datestyle{June 2012}\\
+      \hfill \emph{2 oral presentations} \\
+      { \placestyle{Toronto, Canada} }
+    \item Xth Dutch Pediatric Brain Tumor Group \\ (KNOP \& DCOG) symposium \datestyle{June 2009} \\
+      { \placestyle{Nijmegen,  The Netherlands} }
+    \item Barcelona DIPG workshop \datestyle{February 2009} \\
+      { \placestyle{Barcelona, Spain} }
+    \end{itemize}
+  }
+  \item { Parkinsons Research Related:
+    \begin{itemize}
+    \item  WFN World Congress on Parkinson's Disease \datestyle{December 2007} \\
+      and Related Disorders  \\
+      { \placestyle{Amsterdam, The Netherlands} }
+    \end{itemize}
+  }
+  \end{itemize}
+}
+%\item {
+%  Poster presentations:
+%  \begin{itemize}
+%  \item International Symposium on Pediatric Neuro-Oncology \datestyle{June 2012} \\
+%    \placestyle{Toronto, Canada}
+%  \item Society for Neuro-Oncology \datestyle{November 2011} \\
+%    \placestyle{Orange County, California, USA}
+%  \item Society for Neuro-Oncology \datestyle{November 2010} \\
+%    \placestyle{Montreal, Canada}
+%  \item International Symposium on Pediatric Neuro-Oncology  \datestyle{June, 2010} \\
+%    \placestyle{Vienna, Austria} 
+%  \end{itemize}
+%}
+\end{itemize}
+
+\section{ADDITIONAL INTERNATIONAL EXPERIENCES}
+\begin{itemize}
+\item {
+  {\bf Editorial International Meeting} \datestyle{1993 -- 1999} \\
+  { \placestyle{Buntingford, United Kingdom} } \\
+  The White House International Centre (Peace Child International) \\
+  Financed by the United Nations. \\
+  \emph{Artist-Editor} for the books:
+  \begin{itemize}
+  \item \emph{'Pachamama'} where her paintings were also published. \datestyle{1999}
+  \item \emph{'Global Environment Outlook'} \datestyle{1998}
+  \item \emph{'a World in our Hands'} \datestyle{1995}
+  \item \emph{'Rescue Mission Planet Earth'} \datestyle{1993}
+  \end{itemize}
+}
+\item {
+  {\bf International Children's Peace Council} \datestyle{1993 -- 1998}
+  \begin{itemize}
+  \item \raggedright Various educational projects on sustainable development and human rights in elementary and secondary schools. \\
+    { \placestyle{Milan, Italy} \datestyle{1996 -- 2007} }
+  \item Delegate in the \emph{Children's Food Summit} \\
+    { \placestyle{Rome, Italy} \datestyle{November 1996} }
+  \item Delegate in the \emph{World Summit Children Project} \\
+    { \placestyle{San Jose, Costa Rica} \datestyle{August 1996} }
+  \end{itemize}
+}
+\end{itemize}
+
+\section{PROFESSIONAL THEATER TRAINING}
+\begin{itemize}
+\item {\bf Being Scene}, A. Hayes \datestyle{November 2013} \\
+  { \placestyle{Stanford, CA} }
+\item {\bf The Symphonic Body: Stanford}, director A. Carlson \datestyle{May 2013} \\
+  { \placestyle{Stanford, CA} }
+\item {\bf Advanced Theatre Laboratory}, director G. Bagnoli \datestyle{October 2004 –- February 2006} \\
+  { \placestyle{Milan, Italy} }
+\item {\bf Advanced Stage for Actors}, director G. Bagnoli \datestyle{August 2005} \\
+  { \placestyle{Florence, Italy} }
+\item {\bf 'Quelli di Grock' Theater School}, 1\superscript{st} and 2\superscript{nd} year \datestyle{October 2002 –- July 2004} \\
+  { \placestyle{Milan, Italy} }
+\end{itemize}
+
+\end{resume}
+\end{document}
