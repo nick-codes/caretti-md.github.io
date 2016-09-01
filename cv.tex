@@ -3,7 +3,12 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font
 
-%\usepackage[letterpaper, margin=0.75in]{geometry}
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\addtolength{\textwidth}{1.0in}
+%\usepackage[letterpaper, margin=0.5in]{geometry}
+
+\usepackage{hyperref}
 
 \newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
 \newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
@@ -35,7 +40,7 @@
 \begin{document}
 
 \begin{tikzpicture}[remember picture, overlay]
-  \node[rectangle] at (11.6, -2.5)
+  \node[rectangle] at (14.15, -2.8)
    {\includegraphics[width=3cm]{cv-image}
   };
 \end{tikzpicture}
@@ -142,7 +147,7 @@
 \newpage
 \section{PUBLICATIONS}
 \vspace{-0.75pt}
-{\footnotesize 
+{\footnotesize
 \begin{enumerate}
 \item M.H.A. Jansen*, T. Lagerweij*, A.C.P. Sewing*, D.J. Vugts, D.G. van Vuurden, C.F.M. Molthoff, \namestyle{V. Caretti}, S.J.E. Veringa, N. Petersen, A.M. Carcaboso, D.P. Noske, W.P. Vandertop, P. Wesseling, G.A.M.S. van Dongen, G.J.L. Kaspers, E. Hulleman. Bevacizumab targeting diffuse intrinsic pontine glioma: results of 89Zr-bevacizumab PET imaging in brain tumor models. \emph{Mol Cancer Ther} (June 2016)
 \item H.S. Venkatesh*, TB Johung*, \namestyle{V. Caretti*}, A. Noll*, Y. Tang, S. Nagaraja, E.M. Gibson, C.W. Mount, J. Polepalli, S.S.Mitra, P.J. Woo, R.C. Malenka, H. Vogel, M. Bredel, P. Mallick, M.Monje. Neuronal Activity Promotes Glioma Growth through Neuroligin-3 Secretion. \emph{Cell} (May 2015).161(4): 803–816.
@@ -162,16 +167,31 @@
 \end{enumerate}
 }
 
-\section{STUDENTS \\ MENTORED}
+\section{MENTORSHIP \\ AND \\ TEACHING}
 \begin{itemize}
-\item 2 Undergraduate, 1 Medical, and 2 PhD Students (Stanford) \datestyle{2013 -- 2016}
-  \begin{itemize}
-  \item 1 Undergraduate awarded the Stanford Firestone Medal \datestyle{2016}
-  \end{itemize}
-\item 3 Masters Students (Master Oncology, VUmc)  \datestyle{2009 -- 2011}
+  \item {
+    {\bf Students Mentored}
+    \begin{itemize}
+      \item 2 Undergraduate, 1 Medical, and 2 PhD Students (Stanford University) \datestyle{2013 -- 2016} \\
+        {\placestyle Stanford, CA}
+        \begin{itemize}
+          \item 1 Undergraduate awarded the Stanford Firestone Medal \datestyle{2016}
+        \end{itemize}
+      \item 3 Masters Students (Master Oncology, VUmc)  \datestyle{2009 -- 2011} \\
+        {\placestyle Amsterdam}
+    \end{itemize}
+  }
+  \item {
+    {\bf Courses Taught}
+    \begin{itemize}
+      \item Neurology (Osteopath School of Milan) \datestyle{2005-2006} \\
+        {\placestyle{Milan}}
+    \end{itemize}
+  }
+
 \end{itemize}
 
-\section{AWARDS \\ FOR \\ INTERNATIONAL \\ INTERNSHIPS}
+\section{AWARDS \\ FOR \\ INTERNATIONAL INTERNSHIPS}
 \begin{itemize}
 \item {\bf Hospital das Clinicas}, Neurology Department \datestyle{August -- September 2007} \\
   { \placestyle{Belo Horizonte, Brazil} } \\
@@ -192,6 +212,18 @@
 \item \emph{Travel Award} \datestyle{December 2007} \\
     {WFN World Congress on Parkinson's Disease and Related Disorders}  \\
     { \placestyle{Amsterdam, The Netherlands} }
+\end{itemize}
+
+\section{MEDIA}
+\begin{itemize}
+\item \emph{Brains \& Bourbon} Ep18 Rethinking Brain Tumors \datestyle{Sept 2014} \\
+  {\placestyle{ \url{http://goo.gl/qbEQNU}}}
+\item \emph{Outside the tower. A night at the museum.} Mention in Letter in Science \datestyle{July 2014} \\
+  {\placestyle{ \url{http://goo.gl/3oHs1X}}}
+\item \emph{NDRI Research Nexus: Brain Donations Empower Researchers at Stanford University} \datestyle{Dec 2013}\\
+  {\placestyle{ \url{http://goo.gl/PuhDzv}}}
+\item \emph{Penguins \& Pajamas} Neurotalk at the Academy of Arts and Sciences \datestyle{Sept 2013} \\
+  {\placestyle{ \url{http://goo.gl/7TZ78Y}}}
 \end{itemize}
 
 \section{SYMPOSIA \\ AND \\ CONGRESSES}
@@ -229,7 +261,7 @@
 %  \item Society for Neuro-Oncology \datestyle{November 2010} \\
 %    \placestyle{Montreal, Canada}
 %  \item International Symposium on Pediatric Neuro-Oncology  \datestyle{June, 2010} \\
-%    \placestyle{Vienna, Austria} 
+%    \placestyle{Vienna, Austria}
 %  \end{itemize}
 %}
 \end{itemize}
@@ -262,7 +294,8 @@
 }
 \end{itemize}
 
-\section{PROFESSIONAL THEATER TRAINING}
+\newpage
+\section{PROFESSIONAL THEATER TRAINING AND PERFORMANCE}
 \begin{itemize}
 \item {\bf Being Scene}, A. Hayes \datestyle{November 2013} \\
   { \placestyle{Stanford, CA} }
