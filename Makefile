@@ -9,8 +9,10 @@ cv.html : cv.tex pgfsys-tex4ht.def
 	sed -i.bak 's|<object.*</object>|<img class="headshot" src="cv-image.jpg" alt="Picutre of Viola">|' cv.html
 # Rip out the dots
 	sed -i.bak 's|<tspan[^>]*>.</tspan>||g' cv.html
-# Move the dates to the right
+# Move the dates the right
 	sed -i.bak 's|<tspan\([^>]*\)>(\(.*\))</tspan>|<tspan class="right" \1>(\2)</tspan>|' cv.html
+# Fix the classes for fonts
+	sed -i.bak 's|font-family=|class=|g' cv.html
 # Add required css
 	echo "/* CUSTOM CSS */ " >> cv.css
 	echo ".right { float: right;}" >> cv.css
