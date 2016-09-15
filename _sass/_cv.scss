@@ -164,20 +164,16 @@ math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STI
 /* CUSTOM CSS */ 
 .right { float: right;}
 table.section {width: 100%}
+table.section tbody tr td {display: table-row;}
 table.section tbody tr td:first-child {font-weight: 900;}
+td.section br { display: none; }
 .linename { font-size: 36px; font-weight: 900; }
 .headshot { height: 150px; margin-top: -25px;}
 .line-address { margin-top: -95px; margin-bottom: 95px; }
 .resume dt { min-width: 25px; margin-right: 0px; }
 .resume dd { padding-left: 45px; }
 td.section { width: 125px; }
-/*
-.headshot { display:inline;position:absolute; }
-@media only screen and (max-width: 899px) {
-  .line-address { padding-top: 50px; height: 100px; }
-  .headshot { display:inline;height:150px;left:10px;top:75px; }
+@media only screen and (min-width: 500px) {
+  table.section tbody tr td { display: table-cell; }
+  td.section br { display: inline; }
 }
-@media only screen and (min-width: 900px) {
-  .headshot { height:200px;right:15px;top:150px; }
-}
-*/
