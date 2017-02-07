@@ -97,12 +97,20 @@
 /**
  * Site footer
  */
+@media print
+{
+  .site-footer {
+    display: none;
+  }
+}
+
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
 .footer-heading {
+    text-align: center;
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
 }
