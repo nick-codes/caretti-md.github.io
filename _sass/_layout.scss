@@ -92,17 +92,22 @@
     }
 }
 
-
+@media print
+{
+  .cv-download {
+    display: none;
+  }
+}
+.cv-download {
+  margin-top: 15px;
+  img {
+    vertical-align: text-bottom;
+  }
+}
 
 /**
  * Site footer
  */
-@media print
-{
-  .site-footer {
-    display: none;
-  }
-}
 
 .site-footer {
     border-top: 1px solid $grey-color-light;
