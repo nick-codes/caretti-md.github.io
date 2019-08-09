@@ -1,9 +1,9 @@
-all: open
+all: open install
 
-cv.pdf : cv.tex res.cls
+cv.pdf : cv.tex res.cls Makefile
 	pdflatex cv.tex
 
-cv.html : cv.tex pgfsys-tex4ht.def
+cv.html : cv.tex pgfsys-tex4ht.def Makefile
 	htlatex cv.tex
 # Fix the image
 	sed -i.bak 's|<object.*</object>|<img class="headshot" src="cv-image.jpg" alt="Picutre of Viola">|' cv.html
@@ -13,6 +13,12 @@ cv.html : cv.tex pgfsys-tex4ht.def
 	sed -i.bak 's|<tspan\([^>]*\)>(\(.*\))</tspan>|<tspan class="right" \1>(\2)</tspan>|' cv.html
 # Fix the classes for fonts
 	sed -i.bak 's|font-family=|class=|g' cv.html
+# Remove useless tags
+	sed -i.bak 's|font-size=""||g' cv.html
+# Remove trailing whitespace
+	sed -i.bak -E 's| +$$||' cv.html
+# Condense classes
+	sed -i.bak -E 's|class="([^"]+)" +class=\"|class="\1 |' cv.html
 # Add required css
 	echo "/* CUSTOM CSS */ " >> cv.css
 	echo ".right { float: right;}" >> cv.css
@@ -41,6 +47,10 @@ open-html: cv.html
 	open cv.html
 
 open: open-pdf open-html
+
+install:
+	cp cv.pdf caretti-md.github.io/
+	cp cv.html caretti-md.github.io/_includes/
 
 clean:
 	rm -f *.aux *.bbl *.blg *.idx *.lof *.toc *.lot *.4tc *.4tc *.dvi *.lg *.tmp *.xref cv.html cv.pdf cv.css cv-1.svg
