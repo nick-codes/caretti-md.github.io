@@ -9,6 +9,9 @@ cv.html : cv.tex pgfsys-tex4ht.def Makefile
 	sed -i.bak 's|<object.*</object>|<img class="headshot" src="cv-image.jpg" alt="Picutre of Viola">|' cv.html
 # Rip out the dots
 	sed -i.bak 's|<tspan[^>]*>.</tspan>||g' cv.html
+# Fix <tspan class="ptmr7t">(October 2015 - August</tspan><tspan class="ptmr7t">2019)</tspan>
+	sed -i.bak 's|<tspan\([^>]*\)>(October 2015 - August</tspan>|<tspan class="right" \1>(October 2015 - August|' cv.html
+	sed -i.bak 's|<tspan .*>2019)</tspan>| 2019)</tspan>|' cv.html
 # Move the dates the right
 	sed -i.bak 's|<tspan\([^>]*\)>(\(.*\))</tspan>|<tspan class="right" \1>(\2)</tspan>|' cv.html
 # Fix the classes for fonts
