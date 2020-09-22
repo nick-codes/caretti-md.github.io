@@ -51,7 +51,7 @@ open-html: cv.html
 
 open: open-pdf open-html
 
-install:
+install: cv.pdf cv.html
 	cp cv.pdf caretti-md.github.io/
 	cp cv.html caretti-md.github.io/_includes/
 
